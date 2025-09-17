@@ -1,0 +1,7 @@
+{
+	"name": "fuwari-bing",
+	"compatibility_date": "2024-09-17",
+	"assets": {
+		"directory": "./dist"
+	}
+}
