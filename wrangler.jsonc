@@ -1,6 +1,6 @@
 {
-	"name": "fuwari-bing",
-	"compatibility_date": "2024-09-17",
+	"name": "fuwari-biog",
+	"compatibility_date": "2025-04-01",
 	"assets": {
 		"directory": "./dist"
 	}
