@@ -30,4 +30,5 @@ yarn.lock
 .idea
 *.iml
 
-workspace.json
+# Obsidian
+.obsidian/workspace.json
