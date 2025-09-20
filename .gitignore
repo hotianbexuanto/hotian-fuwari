@@ -32,3 +32,4 @@ yarn.lock
 
 # Obsidian
 .obsidian/workspace.json
+.onsidian/workspace-mobile.json
