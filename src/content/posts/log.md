@@ -5,6 +5,7 @@ description: ""
 image: ""
 tags:
   - 记录
+  - log
 category: log
 draft: false
 lang: ""
