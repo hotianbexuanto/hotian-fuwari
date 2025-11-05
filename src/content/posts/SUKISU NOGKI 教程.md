@@ -54,6 +54,9 @@ patch -p1 < “文件名称”.patch
 > 如果需要可装模块
 > - TrickyStore
 > 隐藏bl和Google的证书伪装
+> 如果需要方便的控制可加装 Tricky-Addon-Update-Target-List 模块
+> 此模块的页面中可直接全选应用后再使用去除不需要选择的应用功能
+> 或如一键工具Yurikey Manager等其他一键工具可直接设置有效的密钥等功能
 > 
 > - PlayIntegrityFix
 > 我可能推荐 inject-s 版？
