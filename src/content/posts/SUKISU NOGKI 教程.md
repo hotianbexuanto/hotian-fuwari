@@ -36,13 +36,11 @@ patch -p1 < “文件名称”.patch
  arch/arm64/configs/(构建内核时使用的配置文件)
 添加以下配置
 
-:::note
 ```markdown
 CONFIG_KPM=y
 CONFIG_KALLSYMS=y
 CONFIG_KALLSYMS_ALL=y
 ```
-:::
 
 :::tip
 编译请自行根据其他教程
