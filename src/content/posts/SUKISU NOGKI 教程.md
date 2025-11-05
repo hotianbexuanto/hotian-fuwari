@@ -37,13 +37,11 @@ patch -p1 < “文件名称”.patch
 添加以下配置
 
 :::note
-
 ```markdown
 CONFIG_KPM=y
 CONFIG_KALLSYMS=y
 CONFIG_KALLSYMS_ALL=y
 ```
-
 :::
 
 :::tip
