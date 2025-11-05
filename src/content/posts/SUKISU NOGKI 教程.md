@@ -32,44 +32,45 @@ patch -p1 < “文件名称”.patch
 出现了3个未能修补到内核的文件中的代码文件 .rej
 请根据.rej文件中的绿色代码部分来复制粘贴到文件中正确的位置来更改
 
-> [!info]
-> 如果需要使用KPM功能请在文件
-> arch/arm64/configs/(构建内核时使用的配置文件)
->添加以下配置
-> 
-> CONFIG_KPM=y
-> CONFIG_KALLSYMS=y
-> CONFIG_KALLSYMS_ALL=y
+ 如果需要使用KPM功能请在文件
+ arch/arm64/configs/(构建内核时使用的配置文件)
+添加以下配置
 
-> [!tip]
-> 编译请自行根据其他教程
-> 进行 本地/云端 编译
+:::note
+CONFIG_KPM=y
+CONFIG_KALLSYMS=y
+CONFIG_KALLSYMS_ALL=y
+:::
 
+:::tip
+编译请自行根据其他教程
+进行 本地/云端 编译
+:::
 ## 配置/模块教程
 
 > 在安装管理器后打开可看见类似以下界面
 ![](../image/Screenshot_2025-11-05-16-03-37-03_bec4adb6b20c589.png)
 
-> [!example] 模块推荐
-> 如果需要可装模块
-> - TrickyStore
-> 隐藏bl和Google的证书伪装
-> 如果需要方便的控制可加装 Tricky-Addon-Update-Target-List 模块
-> 此模块的页面中可直接全选应用后再使用去除不需要选择的应用功能
-> 或如一键工具Yurikey Manager等其他一键工具可直接设置有效的密钥等功能
-> 
-> - PlayIntegrityFix
-> 我可能推荐 inject-s 版？
-> 
->- ReZygisk相关
-> 目前最新sukisu rezygisk(版本423)无法使用，
-> 使用使用旧版本才能使用
-> 
-> - ZygiskNext
-> 新版本能够继续使用可能和有版本检测问题
-> 
-> 其他模块请根据需求添加需要的模块
+:::important
+如果需要可装模块
+- TrickyStore
+隐藏bl和Google的证书伪装
+如果需要方便的控制可加装 Tricky-Addon-Update-Target-List 模块
+此模块的页面中可直接全选应用后再使用去除不需要选择的应用功能
+或如一键工具Yurikey Manager等其他一键工具可直接设置有效的密钥等功能
 
+- PlayIntegrityFix
+我可能推荐 inject-s 版？
+
+- ReZygisk相关
+目前最新sukisu rezygisk(版本423)无法使用，
+使用使用旧版本才能使用
+
+- ZygiskNext
+新版本能够继续使用可能和有版本检测问题
+
+其他模块请根据需求添加需要的模块
+:::
 ### 使用HMA教程
 
 >使用前需要添加xp模块框架，目前可使用 LSPosed-it/其他的旧LSPosed源代码 fork后更改的xp模块框架
@@ -96,7 +97,8 @@ patch -p1 < “文件名称”.patch
 >-  ”已应用于0个应用“
 >-  进入此项的“编辑列表”，此选项是选择隐藏应用需要对哪些应用隐藏
 
-> [!question] HMA设置？
-> 在设置中的 模块 分类中的 数据隔离
-> 切记如果不需要则不要开启“Vold app Data 隔离”选项
-> 下面的“为所有应用启用数据隔离”可根据环境开启
+:::warning
+在设置中的 模块 分类中的 数据隔离
+切记如果不需要则不要开启“Vold app Data 隔离”选项
+下面的“为所有应用启用数据隔离”可根据环境开启
+:::
