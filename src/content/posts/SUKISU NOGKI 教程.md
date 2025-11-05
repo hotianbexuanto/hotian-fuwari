@@ -51,7 +51,7 @@ CONFIG_KALLSYMS_ALL=y
 > 在安装管理器后打开可看见类似以下界面
 ![](../image/Screenshot_2025-11-05-16-03-37-03_bec4adb6b20c589.png)
 
-:::important
+:::important[模块推荐]
 如果需要可装模块
 - TrickyStore
 隐藏bl和Google的证书伪装
@@ -97,7 +97,7 @@ CONFIG_KALLSYMS_ALL=y
 >-  ”已应用于0个应用“
 >-  进入此项的“编辑列表”，此选项是选择隐藏应用需要对哪些应用隐藏
 
-:::warning
+:::warning[HMA设置？]
 在设置中的 模块 分类中的 数据隔离
 切记如果不需要则不要开启“Vold app Data 隔离”选项
 下面的“为所有应用启用数据隔离”可根据环境开启
